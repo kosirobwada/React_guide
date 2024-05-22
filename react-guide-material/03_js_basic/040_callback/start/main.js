@@ -1,7 +1,14 @@
 function fn(number) {
     return number * 2;
   }
+
+function print(callback) {
+  const result = callback(2);
+  console.log(result)
+}
   
+print(fn);
+
   console.log(fn(2));
   console.log(fn(4));
   
